@@ -43,3 +43,28 @@ const myFunction = function(){
 console.log(typeof heros);
 console.log(typeof myobj);
 console.log(typeof myFunction);
+
+
+
+//---------------------------------------------------------
+//Stack (Primitive), Heap (Non-Primitive)
+let myYoutubename = "kartikshakyadotcom"
+let anothername = myYoutubename
+anothername = "chai or code"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+// in heap always will be changes in original value
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "kartik@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
