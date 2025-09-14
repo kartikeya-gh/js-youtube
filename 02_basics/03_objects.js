@@ -2,14 +2,14 @@
 
 
 
-//to object to declare two ways first is literal and second one is constructor
+//to object to declare two ways first is literal and second one is constructor(singleton)
 //singletone-- create object by constructor is called singleton and this is not create by literal
 //Object.create =====//object through contructor method
 
 
 const mySym = Symbol("key1")    //let take this line only symbol datatype in const-variable
 
-// object literals
+// object literals here below
 const JsUser = {
     name: "Kartikeya",  //in key as a saved of string like in double quotes="name" to memory there
     "full name": "Kartikeya Shakya",
