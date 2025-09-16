@@ -68,14 +68,33 @@ const users = [
 //console.log(users[0].email);  //output=k@gmailcom
 
 
-console.log(tinderUser);
+//console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));  //output=[ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser)); //output=[ '123abc', 'Sammy', false ]
-console.log(Object.keys(tinderUser).length);  //output=3
-console.log(Object.values(tinderUser).length); //output=3
-console.log(Object.entries(tinderUser)); //output=[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]  //less used of entries() in coding
+//console.log(Object.keys(tinderUser));  //output=[ 'id', 'name', 'isLoggedIn' ]
+//console.log(Object.values(tinderUser)); //output=[ '123abc', 'Sammy', false ]
+//console.log(Object.keys(tinderUser).length);  //output=3
+//console.log(Object.values(tinderUser).length); //output=3
+//console.log(Object.entries(tinderUser)); //output=[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]  //less used of entries() in coding
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn")); //output=true
-console.log(tinderUser.hasOwnProperty("isLoggedOut"));  //output=false
+//console.log(tinderUser.hasOwnProperty("isLoggedIn")); //output=true
+//console.log(tinderUser.hasOwnProperty("isLoggedOut"));  //output=false
 
+
+
+
+
+ 
+//part-3------------------------------------------------destructure in object
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseinstructor: "kartik"
+}
+//console.log(course["courseinstructor"]);   //common method
+
+//const {courseinstructor} = course
+//console.log(courseinstructor);
+
+const {courseinstructor: othername} = course
+console.log(othername);
