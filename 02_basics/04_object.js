@@ -89,12 +89,24 @@ const users = [
 const course = {
     coursename: "js in hindi",
     price: "999",
-    courseinstructor: "kartik"
+    courseInstructor: "kartik"
 }
-//console.log(course["courseinstructor"]);   //common method
+//console.log(course["courseInstructor"]);   //common method //OUTPUT=kartik
 
-//const {courseinstructor} = course
-//console.log(courseinstructor);
+//const {courseInstructor} = course    //output=kartik
+//console.log(courseInstructor);
 
-const {courseinstructor: othername} = course
-console.log(othername);
+//const {courseInstructor: tutor} = course   //here courseInstructor to change in other name like called as destructure (tutor) //output=kartik
+//console.log(tutor);
+
+
+
+
+//JSON format
+/*{
+    "name":"kartik"
+    "coursename":"js in hindi",
+    "price":"total-free"
+  }   */
+
+    
