@@ -75,11 +75,27 @@ function loginUserMessage(username){  //if given (username="sam") this is condit
 }
 //console.log(loginUserMessage()); //  output=Please enter a username
                                    //         undefined
-console.log(loginUserMessage(""));   //output=just logged in
+//console.log(loginUserMessage(""));   //output=just logged in
+
+
+//==========================================================================================================================
+//video number 20
+
+/*function calculateCartPrice(...num1){   ///...this is here called rest op//  (spread or rest operator)  called there but these are different on basis of use case there
+    return num1
+} */
+//console.log(calculateCartPrice(200,400,500)); //output=[ 200, 400, 500 ]
+
+
+function calculateCartPrice(val1,val2,...num1){
+    return num1
+}
+//console.log(calculateCartPrice(200,400,500,2000));  //output=[ 500, 2000 ]==  because val1 goes to 200 and val2 goes to 400 so num1 value is return only take 500,200
 
 
 
 
-
-
+const user={
+    username
+}
 
