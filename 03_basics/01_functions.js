@@ -93,9 +93,49 @@ function calculateCartPrice(val1,val2,...num1){
 //console.log(calculateCartPrice(200,400,500,2000));  //output=[ 500, 2000 ]==  because val1 goes to 200 and val2 goes to 400 so num1 value is return only take 500,200
 
 
-
-
+//=============
+//how to object to pass in function there
 const user={
-    username
+    username:"kartik",
+    price: 199
 }
 
+function handleObject(anyobject){      //anyobject ki jagah hum (user) bhi de sakte h pr as h reference alag le sakte h
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);  //type safety is mandatory there 
+}
+//handleObject(user) //output=Username is kartik and price is 199
+
+
+//start the video here
+handleObject({
+    username: "sam",
+    price:399
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+const user={
+    username:"kartik",
+    price: 199
+}
+
+function handleObject(user){      
+    console.log(`Username is ${user.username} and price is ${user.price}`);
+}
+handleObject(user)
+*/ //output=Username is kartik and price is 199
